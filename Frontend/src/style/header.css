@@ -1,0 +1,114 @@
+.header {
+  width: 100%;
+  border-bottom: 2px solid #222;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  border-bottom: 2px solid #222;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.header-logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.header-year {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.year-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0 12px;
+}
+
+.year-navigation-title {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.header-navigation-container
+
+
+/* Scroll horizontal */
+.horizontal-scroll {
+  display: flex;
+  gap: 5px;
+  width: 1000px;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 2px 0 8px;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 10px;
+}
+
+/* Botões de décadas e anos */
+.decade-button,
+.year-button {
+  flex: 0 0 auto;
+  padding: 7px 11px;
+  font-size: 12px;
+  color: #222;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.decade-button {
+  font-weight: 600;
+}
+
+.year-button {
+  min-width: 65px;
+}
+
+.decade-button:hover,
+.year-button:hover,
+.decade-button.selected,
+.year-button.selected {
+  color: #fff;
+  background: #222;
+  border-color: #222;
+}
+
+.year-button.selected {
+  font-weight: bold;
+}
